@@ -1,0 +1,223 @@
+h2 {
+    font-size: 75px;
+    color: black;
+    box-shadow: 10px 10px 5px rgba(21, 21, 21, 0.865);
+    background-image: white;
+}
+
+h3 {
+    font-size: 75px;
+    color: black;
+    box-shadow: 10px 10px 5px rgba(21, 21, 21, 0.865);
+    background-image: white;
+}
+
+h4 {
+    color: black;
+}
+
+.cardMain {
+    font-family: 'Keania One', cursive;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    justify-content: center;
+    align-content: center;
+    margin: 3%;
+    margin-top: 20%;
+    box-shadow: 10px 10px 5px rgba(21, 21, 21, 0.865);
+    background-image: white;
+}
+
+.headerMain {
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Keania One', cursive;
+    color: black;
+    box-shadow: 10px 10px 5px rgba(21, 21, 21, 0.865);
+    background-image:white;
+}
+
+.form-group {
+    color: black;
+}
+
+
+/* Cards for weapons options  */
+
+.card {
+    font-family: 'Keania One', cursive;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    margin: 3%;
+    margin-top: 15%;
+    box-shadow: 10px 10px 5px rgba(21, 21, 21, 0.865);
+    text-align: center;
+    color: black;
+    background-image: white;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+
+/* Large card for page 2 */
+
+.card-page2 {
+    font-family: 'Keania One', cursive;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    height: 600px;
+    text-align: center;
+    margin-top: 8%;
+    box-shadow: 10px 10px 5px rgba(21, 21, 21, 0.865);
+}
+
+
+/* NavBar for page 2*/
+
+.navbar {
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    box-shadow: 10px 10px 5px rgba(21, 21, 21, 0.865);
+    background-image: white;
+}
+
+.nav-link {
+    color: black;
+}
+
+
+/* Smaller cards for page 2 */
+
+.card2 {
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    margin: 10px;
+    box-shadow: 10px 10px 5px rgba(21, 21, 21, 0.865);
+    background-image: white;
+}
+
+.card2:hover {
+    transform: scale(1.1);
+}
+
+.card-title2 {
+    color: white;
+}
+
+
+/* Styles for page 3 */
+
+.card-page3 {
+    font-family: 'Keania One', cursive;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    height: 600px;
+    text-align: center;
+    margin-top: 8%;
+    box-shadow: 10px 10px 5px rgba(21, 21, 21, 0.865);
+}
+
+.card-title {
+    font-size: 20px;
+    color: black;
+}
+
+.card-title a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* NavBar for page 3*/
+
+.navbar2 {
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    box-shadow: 10px 10px 5px rgba(21, 21, 21, 0.865);
+    background-image: black;
+}
+
+.nav-link {
+    color: white;
+}
+
+
+/* Smaller cards for page 3 */
+
+.card3 {
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    margin: 10px;
+    box-shadow: 10px 10px 5px rgba(21, 21, 21, 0.865);
+    background-image: white;
+}
+
+.card3:hover {
+    transform: scale(1.1);
+}
+
+.card-title2 {
+    color: black;
+}
+
+.btn {
+    margin-top: 1%;
+}
+
+.workout-name {
+    font-size: larger;
+}
+
+#logout {
+    color: black;
+    text-align: right;
+    font-family: 'Keania One', cursive;
+}
+
+#workouts {
+    margin-left: 20%;
+    color: black;
+    font-family: 'Keania One', cursive;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+#userReview {
+    font-family: 'Keania One', cursive;
+}
+
+#profile {
+    margin-left: 20%;
+    color: white;
+    font-family: 'Keania One', cursive;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+#workout-comment {
+    color: black;
+    font-family: 'Keania One', cursive;
+    white-space: nowrap;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
