@@ -2,8 +2,9 @@
   "name":"project-2",
   "description":"",
   "version":"1.0.0",
-  "main":"index.js",
+  "main":"server.js",
   "scripts":{
+    "postinstall": "npm run build",
     "test":"echo \"Error: no test specified\" && exit 1",
     "start":"node server.js",
     "seed":"node seeds/seed.js"
@@ -34,5 +35,9 @@
     "eslint-config-prettier":"^8.3.0",
     "nodemon":"^2.0.15",
     "prettier":"^2.5.1"
+  },
+  "engines":{
+    "node":">=16.13.O",
+    "npm": ">=8.1.0"
   }
 }
