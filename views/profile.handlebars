@@ -1,0 +1,49 @@
+<div class="row">
+  <div class="col-auto welcome-box">
+    <a class="welcome">Welcome, {{name}}!</a>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col-md-6 container">
+    <a class="new-work">Create a New Workout:</a>
+
+    <form class="form new-workout-form">
+      <div class="form-group">
+        <label for="workout-name">workout name:</label>
+        <input class="form-input" type="text" id="workout-name" name="workout-name" />
+      </div>
+
+      <div class="form-group">
+        <label for="workout-desc">description:</label>
+        <textarea class="form-input" id="workout-desc" name="workout-desc"></textarea>
+      </div>
+        <div class="form-group">
+        <label for="workout-story">excercises:</label>
+        <textarea class="form-input" id="workout-story" name="workout-story"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Create</button>
+      </div>
+    </form>
+  </div>
+
+  {{#if workouts.length}}
+  <div class="col-md-6 workout-list">
+    <a class="current">Current Workouts:</a>
+
+    {{#each workouts as |workout|}}
+    <div class="float-child mb-2">
+      <div class="col-md-8">
+        <h4><a href="/workout/{{workout.id}}">{{workout.name}}</a></h4>
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-sm btn-danger" data-id="{{workout.id}}">DELETE</button>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
+</div>
+
+<script src="./js/profile.js"></script>

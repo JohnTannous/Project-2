@@ -1,8 +1,5 @@
 const router = require('express').Router();
-const sequelize = require("sequelize");
-const Op = sequelize.Op;
-const { User } = require('../../models/User');
-
+const { User } = require('../../models');
 
 router.post('/', async (req, res) => {
   try {
@@ -18,6 +15,7 @@ router.post('/', async (req, res) => {
     res.status(400).json(err);
   }
 });
+
 router.post('/login', async (req, res) => {
   try {
     const userData = await User.findOne({ where: { email: req.body.email } });

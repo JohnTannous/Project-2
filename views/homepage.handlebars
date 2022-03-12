@@ -2,55 +2,53 @@
     <p>Daily Workouts</p>
 </header>
 
+{{#each workouts as |workout| }}
 <div class="container">
-    <div class="row justify-content-center w-15">
-        <div class="cardMain" style="width: 20rem;">
-            <div class="card-header" style="width:22rem;">
-                <div class="col-md-6">
-                    <h4>Login</h4>
-                    <form class="form login-form">
-                        <div class="form-group">
-                            <label for="email-login">email:</label>
-                            <input class="form-input" type="text" id="email-login" />
-                        </div>
-                        <div class="form-group">
-                            <label for="password-login">password:</label>
-                            <input class="form-input" type="password" id="password-login" />
-                        </div>
-                        <div class="form-group">
-                            <button class="btn btn-primary" type="submit">login</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
         <div class="cardMain" style="width: 20rem;">
             <div class="card-header" style="width:22rem;">
                 <div class="card-body">
-                    <h4>Signup</h4>
-                    <form class="form signup-form">
-                        <div class="form-group">
-                            <label for="name-signup">name:</label>
-                            <input class="form-input" type="text" id="name-signup" />
+                    <div class="container float-child mb-4 workout">
+                        <div class="col-md-5">
+                            <h2>
+  
+     
+                                <a href="/workout/{{workout.id}}">{{workout.name}}</a>
+                             </h2>
+                             <div class="col-md-7">
+                                 <p>
+                                    {{workout.description}}
+                                 </p>
+                             </div>
+                                 <p>Created by {{workout.user.name}} on {{format_date workout.date_created}}</p>
+                             </div>
+ 
                         </div>
-                        <div class="form-group">
-                            <label for="email-signup">email:</label>
-                            <input class="form-input" type="text" id="email-signup" />
-                        </div>
-                        <div class="form-group">
-                            <label for="password-signup">password:</label>
-                            <input class="form-input" type="password" id="password-signup" />
-                        </div>
-                        <div class="form-group">
-                            <button class="btn btn-primary" type="submit">signup</button>
-                        </div>
-                    </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
+{{/each}}
+
+{{!-- <script src="./js/login.js"></script>
 
 
-<script src="./js/login.js"></script>
+
+{{#each workouts as |workout| }}
+<div class="container float-child mb-4 workout">
+  <div class="col-md-5">
+    <h2>
+  
+     
+      <a href="/workout/{{workout.id}}">{{workout.name}}</a>
+    </h2>
+     <div class="col-md-7">
+    <p>
+      {{workout.description}}
+    </p>
+  </div>
+    <p>Created by {{workout.user.name}} on {{format_date workout.date_created}}</p>
+  </div>
+ 
+</div>
+{{/each}} --}}

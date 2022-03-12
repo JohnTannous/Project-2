@@ -18,57 +18,36 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
-
 <body>
-
-    <style>
-        body {
-            background-image: url({{backgroundImage}});
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-        }
-    </style>
-    <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    {{#if logged_in}}
+    
+  <div class="flex-column justify-space-around container-fluid ">
+    <header class="display-flex justify-space-between align-center p-2">
+      <nav class="navbar navbar-expand-lg">
+        <h1>
+        <a id="title" href="/">Flog</a>
+      </h1>
+       {{#if logged_in}}
                     <a href="/profile"></a> |
                     <a id="logout">Logout</a>
-                    <a id="profile" href="/">Profile</a>
-                    <a id="reviews" href="/workout/{{user_id}}">Your Workouts</a>
+                    <a id="profile" href="/profile">Profile</a>
                     {{else}}
-                    <a href="/login"></a>
+                    <a href="/login" id="logout">login</a>
                     {{/if}}
-                </div>
-            </div>
-        </div>
-    </nav>
-
-
-
+      </nav>
     </header>
     <main class="container container-fluid mt-5">
-        <!-- Render the sub layout -->
-        {{{ body }}}
-
+      <!-- Render the sub layout -->
+      {{{ body }}}
     </main>
     <footer>
-
+      
     </footer>
-    </div>
+  </div>
 
-    <!-- Render script for logged in users only -->
-    {{#if logged_in}}
-    <script src="./js/logout.js"></script>
-    {{/if}}
-
+  <!-- Render script for logged in users only -->
+  {{#if logged_in}}
+  <script src="./js/logout.js"></script>
+  {{/if}}
 </body>
 
 </html>
